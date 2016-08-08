@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+     <meta charset="UTF-8">
+     <title>COYU</title>
+     <meta name="viewport" content="width=device-width">
+     <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+ 
+　  <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">account<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<!-- userがsign_inしている場合に表示する編集へのlink -->
+<div class="row foem user_profile">
+<div class="col-lg-12">
+
+  <div class="profile_edit">
+
+  <li><%= link_to "Edit Profile", edit_user_path(current_user) %></li>
+
+     <li><a href="#">group</a></li>   
+  <li><a href="#">notebook</a></li>
+  <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li>
+
+
+  </div>
+  </ul>
+  </li>
+
+
+
+  </head>
+  <body>
+
+
+
+
+
+
+<div class="boxA">
+
+
+<!-- コンテンツ -->
+   <div class="box3">
+     <article class="contents">
+        <!--  タグ -->
+      <div class="kijicat">
+       <ul>
+         <li><a href="#">刺繍</a></li>
+         <li><a href="#">story</a></li>
+       </ul>
+       </div>
+      <h1>初めての</h1>
+       <!-- 投稿日時 -->
+       <div class="kijiinfo">
+         <time datetime="2016-07-19"><i class="fa fa-clock-o"></i>2016年7月19日</time>
+       </div>
+      <p><img src="P1310278.JPG" alt=""></p>
+      <h2>暮しの手帖</h2>
+
+       <p>暮しの手帖を眺めていたら、刺繍の刺し方が書いてあった。その頃は、もう何するのもゆうつで、何か大きなことを始めたり、前向きになるなんてこと出来ないと、考えていた時期だった。人生が変わることなんてありえない、このままこの生活をずーっとしていくんだろうと。</p>
+       <h2>刺繍を始めたこと</h2>
+       <p>ただ、何となく、そこに載っている図案が可愛かったので、近所の１００円均一のお店で、フェルトと刺繍糸と針とを買ってきてはじめてみたのでした。</p>
+
+
+         <!-- シェアボタン -->
+<div class="share">
+<ul>
+<li>
+<a href="" onlink="" class="share-tw">
+  <i class="fa fa-twitter"></i>
+  <span>Twitter</span>でシェア</a></li>
+<a href="" onlink="" class="share-fb">
+  <i class="fa fa-facebook"></i>
+  <span>Facebook</span>でシェア</a></li>
+<a href="" onlink="" class="share-gp">
+  <i class="fa fa-google-plus"></i>
+  <span>Google+</span>でシェア</a></li>
+</ul>
+</div>
+       </article>
+   </div>
+
+   <!-- サイドバー -->
+   <div class="box4">
+     <div class="box4-1">
+     <aside class="sidemenu">
+      <h1>最近の記事</h1>
+      <ul>
+        <li><a href="#">
+          <i class="fa fa-caret-right"></i>
+        編み物の方法</a></li>
+        <li><a href="#">
+        <i class="fa fa-caret-right"></i>
+        縫い物の方法</a></li>
+        <li><a href="#">
+        <i class="fa fa-caret-right"></i>
+        布のこと</a></li>
+        <li><a href="#">
+        <i class="fa fa-caret-right"></i>
+        いろいろ</a></li>
+      </ul>
+     </aside>
+
+     <div class="box4-2">
+     <aside class="ninki">
+      <h1>最近の記事</h1>
+      <ul>
+        <li><a href="#">
+          <img src="tiisai.JPG" alt="">
+           <div class="text">
+           編み物の方法
+            </div>
+           <span>編み物</span>
+
+        </a></li>
+
+        <li><a href="#">
+        <img src="tiisai.JPG" alt="">
+           <div class="text">
+           縫い物の方法
+           </div>
+           <span>縫い物</span>
+        </a></li>
+
+        <li><a href="#">
+      <img src="tiisai.JPG" alt="">
+         <div class="text">
+        布のこと
+      </div>
+      <span>布</span>
+        </a></li>
+
+        <li><a href="#">
+        <img src="tiisai.JPG" alt="">
+        いろいろ</a></li>
+      </ul>
+      </aside>
+     </div>
+     
+     <div class="box4-2">
+     <aside class="sidemenu">
+      <h1>最近の記事</h1>
+      <ul>
+      <li><a href="#">
+          <i class="fa fa-caret-right"></i>
+        編み物の方法</a></li>
+        <li><a href="#">
+        <i class="fa fa-caret-right"></i>
+        縫い物の方法</a></li>
+        <li><a href="#">
+        <i class="fa fa-caret-right"></i>
+        布のこと</a></li>
+        <li><a href="#">
+        <i class="fa fa-caret-right"></i>
+        いろいろ</a></li>
+      </ul>
+     </aside>
+   </div>
+   </div>
+ </div>
+   
+</html>
