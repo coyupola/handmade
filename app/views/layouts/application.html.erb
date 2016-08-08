@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Handmade</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
 
-</body>
+<!-- 追記した部分 -->
+<html lang="ja">
+  <head>
+     <meta charset="UTF-8">
+     <title>COYU</title>
+     <meta name="viewport" content="width=device-width">
+     <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+     <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+
+<!-- bootstrapのコマンド後で調べる -->
+
+  <script type='text/javascript' charset='utf-8'>
+  $(function(){
+    $.material.init();
+  });
+  </script>
+  
+
+
+  <!-- common/_header.html.erb部分テンプレート呼び出し -->
+<%= render partial: 'common/header' %>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-12'>
+      <%= bootstrap_flash %>
+      <%= yield %>
+    </div>
+  </div>
+     <footer class='row text-center'>
+       <p>(C) coyu 2016 </p>
+     </footer>
+</div>
+  
+  </body>
 </html>

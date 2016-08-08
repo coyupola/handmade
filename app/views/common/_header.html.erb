@@ -1,0 +1,124 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+     <meta charset="UTF-8">
+
+
+<div class='navbar navbar-default navbar-fixed-top'>
+ <div class='container'>
+   
+     <span class='icon-bar'></span>
+     <span class='icon-bar'></span>
+     <span class='icon-bar'></span>
+
+
+
+
+     <title>COYU</title>
+
+
+
+
+     <meta name="viewport" content="width=device-width">
+     <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
+
+     <link rel="stylesheet" href="style.css">
+
+
+
+ <div class='navbar-collapse collapse navbar-responsive-collapse navbar-right'>
+
+
+
+<div class="boxA">
+<!-- サイト名 -->
+   <div class="box1">
+       <div class="site">
+          <h1>
+        <%= link_to root_path, :class => 'navbar-brand' do %>
+
+         Coyu.Online
+          <% end %>
+
+            </h1>
+          <p>なんでも作ってみたい人のサイト</p>
+       </div>
+   </div>
+
+
+
+
+<!-- メニューバー -->
+   <div class="box2">
+    <nav class="menu">
+      <ul>
+       <!--アドレスを挿入 -->
+
+        <li><%= link_to'HOME', root_path %></li>
+        <li><%= link_to 'LOGIN', user_session_path, method: :post %></li>
+        <li><%= link_to 'about', about_path %></li>
+      <li><% if user_signed_in? %>
+
+     <li><a href="#">group</a></li>   
+  <li><a href="#">notebook</a></li>
+  <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li>
+  <% end %>
+ 
+
+      
+     </ul>
+   </nav>
+
+
+   </div>
+
+ </div>
+
+      
+          <span class='caret'>
+          </span>
+        </a>
+      
+       </ul>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+
+
+    </head>
+
+
+  <body>
+
+<div class="box3">
+
+ </div>
+<div class="box4">
+  </div>
+  <div class="box5">
+  </div>
+
+
+
+
+ 
+  </body>
+</html>
+
+
+
+
+
+
+    
+
+      
+
